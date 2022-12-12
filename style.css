@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+body {
+    min-height: 100vh;
+    background-color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.dark {
+    background: #444;
+    box-shadow: 10px 10px 20px 2px #fff;
+}
+section.dark .mode i {
+    color: #282828;
+    background-color: #fff;
+}
+section.dark .clock .time {
+    background-color: #282828;
+    box-shadow: 5px 5px 10px rgba(220, 220, 220, 0.5);
+}
+section.dark .time .num, section.dark .time .unit {
+    color: #fff;
+}
+.container {
+    height: 200px;
+    width: 90%;
+    max-width: 500px;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px 2px #444;
+}
+.container .mode i {
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top: 6%;
+    right: 3%;
+    border-radius: 50%;
+    background-color: #333;
+    cursor: pointer;
+}
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    pointer-events: none;
+}
+.time {
+    height: 85px;
+    width: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(80, 176, 255, 0.22);
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px rgba(30, 30, 30, 0.5);
+}
+.time .num {
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.time .unit {
+    font-size: 0.8em;
+    font-weight: 550;
+}
+.clock .colon {
+    padding: 0 8px;
+    font-size: 2em;
+}
+.clock .ampm {
+    position: absolute;
+    top: 0px;
+    right: -35px;
+}

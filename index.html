@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Digital Clock</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+    <section class="container">
+        <div class="mode">
+            <i class="fas fa-moon"></i>
+        </div>
+        <div class="clock">
+            <div class="time">
+                <div id="hr" class="num">00</div>
+                <div class="unit">Hours</div>
+            </div>
+            <span class="colon">:</span>
+            <div class="time">
+                <div id="min" class="num">00</div>
+                <div class="unit">Minutes</div>
+            </div>
+            <span class="colon">:</span>
+            <div class="time">
+                <div id="sec" class="num">00</div>
+                <div class="unit">Seconds</div>
+            </div>
+            <div class="ampm">AM</div>
+        </div>
+    </section>
+    <script src="logic.js"></script>
+</body>
+
+</html>
